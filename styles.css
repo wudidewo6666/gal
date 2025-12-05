@@ -1,0 +1,77 @@
+/* 页面主体样式 */
+body {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+    height: 300vh;
+    margin: 0;
+    padding: 0; /* 移除顶部和底部的padding，消除表格上方的空白 */
+    color: rgb(9, 3, 50);
+}
+
+/* 页面标题样式 */
+h1 {
+    color: rgb(197, 43, 211);
+}
+
+/* 图片样式 */
+img {
+    border-radius: 40%;
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* 图片悬停效果 */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+/* 图片点击效果 */
+img:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+/* 表格容器样式 */
+.table-container {
+    margin-bottom: 100vh;
+}
+
+/* 表格样式 */
+table {
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    caption-side: top;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    margin-top: 0; /* 移除表格的顶部margin */
+}
+
+/* 表格单元格样式 */
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* 表格行样式 */
+tbody tr {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 表格行悬停样式 */
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
